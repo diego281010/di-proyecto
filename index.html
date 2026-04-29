@@ -133,6 +133,32 @@
                 <a href="#" class="btn">Más Información</a>
             </div>
         </section>
+
+        <!-- Sección Mapa (NUEVA) -->
+        <section class="mapa">
+            <h2>Mapa Interactivo</h2>
+            <div class="mapa__container">
+                <p>Investiga datos de riesgo estadísticos de diversas zonas del país con el siguiente mapa</p>
+                
+                <form class="mapa__form">
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" name="provincia">
+
+                    <label for="canton">Cantón:</label>
+                    <input type="text" id="canton" name="canton">
+
+                    <label for="parroquia">Parroquia:</label>
+                    <input type="text" id="parroquia" name="parroquia">
+
+                    <button type="submit" class="btn">Buscar</button>
+                </form>
+
+                <!-- Aquí puedes integrar un mapa real con iframe de Google Maps o Leaflet -->
+                <div class="mapa__view">
+                    <img src="src/images/map_placeholder.png" alt="Mapa de riesgos">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Start - Section Header -->
@@ -168,6 +194,20 @@
 
     <!-- Start - Section Footer -->
     <!-- End - Section Footer -->
+
+    <!-- Footer (NUEVO) -->
+    <footer class="footer">
+        <div class="footer__left">
+            <p>Inicio</p>
+            <p>Contáctanos: safeexplorec@gmail.com</p>
+            <p>Llámanos: (593) 999919237</p>
+            <hr>
+            <p>www.safeexplorec.com</p>
+        </div>
+        <div class="footer__right">
+            <img src="src/images/logo_footer.png" alt="Logo SafeExplorEC">
+        </div>
+    </footer>
 
 </body>
 

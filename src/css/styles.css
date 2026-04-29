@@ -183,6 +183,96 @@ body {
     box-shadow: 0 16px 28px rgba(255,181,0,0.25);
 }
 
+/* Sección Mapa (NUEVA) */
+.mapa {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.mapa h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 2.2rem;
+    color: var(--colorUno);
+    margin-bottom: 2rem;
+}
+
+.mapa__container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mapa__container p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.mapa__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mapa__form label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: var(--colorUno);
+}
+
+.mapa__form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.mapa__form button {
+    border: none;
+    cursor: pointer;
+}
+
+.mapa__view {
+    margin-top: 2rem;
+}
+
+.mapa__view img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Footer (NUEVO) */
+.footer {
+    background-color: var(--colorUno);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer__left p {
+    margin: 0.5rem 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer__left hr {
+    border-color: rgba(255,255,255,0.3);
+    margin: 0.5rem 0;
+}
+
+.footer__right img {
+    width: 80px;
+    height: auto;
+}
+
 /* TABLETS */
 @media (max-width: 1024px) {
     .header {
@@ -247,5 +337,25 @@ body {
 
     .hero__content {
         padding: 2rem 1.5rem;
+    }
+
+    /* Ajustes responsivos para mapa y footer */
+    .mapa {
+        padding: 2rem 1rem;
+    }
+
+    .mapa__form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa__form input {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
     }
 }
