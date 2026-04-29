@@ -1,7 +1,13 @@
-/* Tipografía global */
+/* Declaración de variables globales */
 :root {
+    --colorUno: #701B23;
+    --colorDos: #FFAE00;
+    --colorTres: #FFFFFF;
+    --colorCuatro: #293A4E;
+    --colorCinco: #000000;
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;
     --bg: #0f0f11;
-    --header: #69222f;
     --card: rgba(146, 137, 126, 0.92);
     --text: #f4f4f4;
     --text-muted: #ddd;
@@ -10,116 +16,116 @@
     --white: #ffffff;
 }
 
-* {
-    box-sizing: border-box;
+/* Estilos generales para todo el documento HTML  */
+html {
+    background-color: var(--colorUno);
 }
 
-html,
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Cuerpo de la pagina */
 body {
+    background-color: #f5f5f5;
     margin: 0;
-    padding: 0;
-    min-height: 100%;
-    font-family: 'Lato', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-}
-
-body {
+    font-family: "Abel", sans-serif;
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
+/* Header */
 .header {
-    position: relative;
-    z-index: 10;
+    background-color: var(--colorUno);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    background: var(--header);
-    color: var(--white);
+    padding: 15px 30px;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.85rem;
+    gap: 15px;
 }
 
 .logo img {
-    width: 44px;
-    height: 44px;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
+    width: 60px;
+    height: 60px;
 }
 
 .logo h1 {
+    color: white;
     margin: 0;
-    font-size: 1.4rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: none;
 }
 
 .logo span {
-    color: var(--accent);
+    color: orange;
 }
 
+/* Barra de navegacion */
 .nav {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .nav a {
-    color: var(--white);
-    font-size: 0.95rem;
-    font-weight: 500;
-    opacity: 0.9;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    color: var(--colorTres);
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-.nav a:hover,
 .nav a.activo {
-    opacity: 1;
-    transform: translateY(-1px);
+    color: var(--colorDos);
+    font-weight: bold;
 }
 
+.nav a:hover {
+    opacity: 0.8;
+}
+
+/* Buscador */
 .search {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.16);
-    border-radius: 999px;
-    padding: 0.5rem 0.9rem;
+    gap: 10px;
+    background-color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
 }
 
 .search i {
-    color: var(--white);
-    font-size: 0.98rem;
+    color: var(--colorUno);
+    font-size: 20px;
 }
 
 .search input {
-    border: none;
-    outline: none;
+    width: 170px;
+    height: 30px;
     background: transparent;
-    color: var(--white);
-    width: 140px;
-    font-size: 0.95rem;
+    border: none;
+    padding: 0;
+    color: var(--colorCinco);
+    outline: none;
 }
 
+.search input::placeholder {
+    color: #999;
+}
+
+/* Main */
+.contenido {
+    background-color: var(--colorTres);
+    min-height: 100vh;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     min-height: calc(100vh - 78px);
@@ -127,7 +133,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 4rem 2rem;
-    background-image: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+    background-image: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)), url('https://imagenes.primicias.ec/files/main_image_832_468/uploads/2024/05/26/665353a787575.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,6 +174,7 @@ img {
     font-size: 1rem;
     font-weight: 700;
     border-radius: 999px;
+    text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -176,37 +183,69 @@ img {
     box-shadow: 0 16px 28px rgba(255,181,0,0.25);
 }
 
-@media (max-width: 900px) {
+/* TABLETS */
+@media (max-width: 1024px) {
     .header {
-        flex-wrap: wrap;
-        padding: 1rem 1.25rem;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
     }
 
     .nav {
-        gap: 1rem;
-        justify-content: center;
-        width: 100%;
+        gap: 15px;
+        margin-right: 20px;
+    }
+
+    .nav a {
+        font-size: 1rem;
     }
 
     .search input {
-        width: 100px;
+        width: 120px;
     }
 }
 
-@media (max-width: 640px) {
+/* CELULARES */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .nav {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
     .hero {
         padding: 3rem 1rem;
     }
 
     .hero__content {
         padding: 2rem 1.5rem;
-    }
-
-    .nav {
-        gap: 0.9rem;
-    }
-
-    .logo h1 {
-        font-size: 1.2rem;
     }
 }
