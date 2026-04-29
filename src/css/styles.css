@@ -1,0 +1,170 @@
+/* Declaración de variables globales */
+:root {
+    --colorUno: #701B23;
+    --colorDos: #FFAE00;
+    --colorTres: #FFFFFF;
+    --colorCuatro: #293A4E;
+    --colorCinco: #000000;
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;
+}
+
+
+/* Estilos generales para todo el documento HTML  */
+html {
+    background-color: var(--colorUno);
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Cuerpo de la pagina*/
+body{
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: "Abel", sans-serif;
+}
+/*Logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo h1{
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.logo span{
+    color: orange;
+}
+
+/*Barra de navegacion*/
+.nav{
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav a{
+    color: var(--colorTres);
+    text-decoration: none;
+}
+
+.nav a.activo{
+    color: var(--colorDos);
+    font-weight: bold;
+}
+/*Cabecera*/
+.header{
+    background-color: var(--colorUno);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+/*Buscador*/
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search i{
+    color: var(--colorTres);
+    font-size: 20px;
+}
+.search input{
+    width: 170px;
+    height: 25px;
+}
+
+
+
+/*Main*/
+.contenido{
+    background-color: var(--colorTres);
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/* TABLETS */
+@media (max-width: 1024px){
+
+    .header{
+        padding: 15px 20px;
+    }
+
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h1{
+        font-size: 2rem;
+    }
+
+    .nav{
+        gap: 15px;
+        margin-right: 20px;
+    }
+
+    .nav a{
+        font-size: 1rem;
+    }
+
+    .search input{
+        width: 120px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 768px){
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .nav{
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .search{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search input{
+        width: 70%;
+    }
+}
