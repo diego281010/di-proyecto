@@ -57,8 +57,8 @@
         <!-- Navegación -->
         <nav class="nav">
             <a href="#" class="activo">Inicio</a>
-            <a href="#">Regiones</a>
-            <a href="#">Ciudades</a>
+            <a href="#">Quito</a>
+            <a href="#">Casos Criminales</a>
             <a href="#">Mapas</a>
         </nav>
 
@@ -81,58 +81,27 @@
         </section>
 
         <!-- Nueva sección Regiones -->
-        <section class="regiones">
-            <h2>Riesgos en las regiones del Ecuador</h2>
-            <div class="regiones__container">
+        <section class="quito">
+            <h2>Tasas y Estadísticas de Criminalidad en Quito en 2026</h2>
+            <div class="quito__container">
 
                 <!-- Región Costa -->
-                <div class="region">
-                    <h3>Región Costa del Ecuador</h3>
+                <div class="informacion">
                     <p>
-                        Esta es actualmente la más afectada por la violencia del crimen organizado, 
-                        especialmente en provincias como Guayas, Los Ríos, Manabí y El Oro. 
-                        Los principales riesgos incluyen homicidios, sicariato, extorsiones, 
-                        secuestros exprés y violencia entre bandas narco-criminales, lo que ha 
-                        llevado a declarar estados de excepción recurrentes y toques de queda en 
-                        varias zonas urbanas y portuarias.
+                        En los primeros meses de 2026, Quito muestra realidades opuestas según el delito. Mientras los robos han descendido notablemente (hasta un 25% menos en el primer trimestre), con un promedio de 3,100 casos y una reducción del 18% en robos a personas, los homicidios han aumentado peligrosamente: se registraron 67 casos solo en el primer trimestre, un 22% más que en 2025, lo que representa una tasa anual estimada de 8 por cada 100,000 habitantes, vinculados mayoritariamente a violencia criminal organizada.
                     </p>
-                </div>
-
-                <!-- Región Sierra -->
-                <div class="region">
-                    <h3>Región Sierra del Ecuador</h3>
-                    <p>
-                        Aunque históricamente era considerada más segura que la Costa, en los 
-                        últimos años ha aumentado la violencia vinculada al crimen organizado. 
-                        Las principales zonas de riesgo incluyen Quito, donde se reportan robos, 
-                        asaltos y sicariato, así como áreas rurales y protegidas como los páramos 
-                        de Pichincha, Cotopaxi y Quilotoa, donde ocurren asaltos a turistas y 
-                        robos de ganado.
-                    </p>
-                </div>
-
-                <!-- Región Amazónica -->
-                <div class="region">
-                    <h3>Región Amazónica u Oriente del Ecuador</h3>
-                    <p>
-                        En la región Amazónica u Oriente, la inseguridad está más vinculada a la 
-                        minería ilegal, la tala indiscriminada y el narcotráfico en zonas 
-                        fronterizas con Colombia y Perú. Provincias como Sucumbíos, Orellana y 
-                        Pastaza presentan riesgos por presencia de grupos armados ilegales, 
-                        violencia contra líderes indígenas y defensores ambientales, además de 
-                        robos en carreteras y campamentos mineros clandestinos.
-                    </p>
+                    <a href="#" class="btn">Más Información</a>
                 </div>
 
             </div>
         </section>
 
         <!-- Sección Ciudades -->
-        <section class="ciudades">
-            <h2>Ciudades y Sectores de riesgo</h2>
-            <div class="ciudades__container">
+        <section class="casoCriminal">
+            <h2>Intento de sicariato en el norte de quito</h2>
+            <div class="casoCriminal__container">
                 <p>
-                    En los últimos años, la percepción de inseguridad en Ecuador ha aumentado debido al crecimiento de diversos delitos como robos, extorsiones y hechos violentos en distintas zonas del país. Esta situación afecta tanto a ciudadanos como a visitantes, quienes muchas veces no cuentan con información clara y actualizada sobre los niveles de riesgo en determinados sectores. Es momento de comenzar a informarnos sobre zonas riesgosas y salvar una vida a la vez.
+                    El 25 de marzo de 2026 en Carapungo, norte de Quito, un adolescente de 16 años que conducía una moto y su cómplice (con boleta de captura por asesinato en Esmeraldas) intentaron un doble sicariato contra una pareja de ciudadanos venezolanos, hiriendo a la mujer en un tobillo y al hombre en muslo y costilla. Ambos fueron detenidos por la Policía.
                 </p>
                 <a href="#" class="btn">Más Información</a>
             </div>
@@ -145,21 +114,18 @@
                 <p>Investiga datos de riesgo estadísticos de diversas zonas del país con el siguiente mapa</p>
                 
                 <form class="mapa__form">
-                    <label for="provincia">Provincia:</label>
-                    <input type="text" id="provincia" name="provincia">
-
-                    <label for="canton">Cantón:</label>
-                    <input type="text" id="canton" name="canton">
-
                     <label for="parroquia">Parroquia:</label>
                     <input type="text" id="parroquia" name="parroquia">
+
+                    <label for="parroquia">Barrio/sector:</label>
+                    <input type="text" id="barrio-sector" name="barrio-sector">
 
                     <button type="submit" class="btn">Buscar</button>
                 </form>
 
                 <!-- Aquí puedes integrar un mapa real con iframe de Google Maps o Leaflet -->
                 <div class="mapa__view">
-                    <img src="src/images/map_placeholder.png" alt="Mapa de riesgos">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36664.7002689804!2d-78.37615861879571!3d-0.12182058381663866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58db4352baa87%3A0x2f9f7623e0894b8b!2sAeropuerto%20Internacional%20Mariscal%20Sucre!5e0!3m2!1ses!2sec!4v1777845379531!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
