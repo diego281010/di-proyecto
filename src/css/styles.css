@@ -331,7 +331,7 @@ body {
         width: 120px;
     }
 
-    /*Estilos para tablet*/
+/*Estilos para tablet*/
 /*seccion1*/
 
 @media (width >= 768px) {
@@ -339,7 +339,6 @@ body {
 
         background-size: cover;
         background-position: center;
-        min-height: 100vh;
     }
     
     .informacion {
@@ -449,6 +448,30 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 2rem;
+    }
+
+    /*Ajustes para la seccion 1*/
+
+    .informacion{
+        text-align: center;
+    }
+    .informacion p{
+        width: 200px;
+    }
+
+
+
+}
+/*Celulares mas pequenios*/
+@media (max-width: 479px){
+    .quito{
+        padding: 10px;
+    }
+    .informacion{
+        text-align: center;
+    }
+    .informacion p{
+        width: 170px;
     }
 }
 
