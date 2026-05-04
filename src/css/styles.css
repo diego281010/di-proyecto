@@ -273,6 +273,36 @@ body {
     height: auto;
 }
 
+/* Estilos para la seccion 1*/
+
+.quito{
+
+    padding: 1rem 2rem;
+    background-color: var(--card);
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKkZ72Jl2AX4NYbNEZS1tuXNiOkjao_vC1ONlHf-G5wDPhzSgGVxYYPrDVixWQqcsiwkPhSmxo9XLPbjmrYmHw5w9RnGleZxIjHltKlpQ7kd5kZCPdah2iNZJGk-6qoBJKin18oHu06g/s2048/Ecu.jpeg");
+}
+.informacion {
+    text-align: center;
+    
+}
+.informacion p {
+    color: var(--colorTres);
+    border: 2px solid var(--colorUno);
+    background-color: var(--colorUno);
+    padding: 30px 15px;
+    border-radius: 30px;
+    margin: 50px 100px;
+}
+.informacion .btn {
+    color: var(--colorTres);
+    background: #D84447;
+}
+
+.quito .informacion .btn:hover {
+    background-color: darkred;
+}
+
+
 /* TABLETS */
 @media (max-width: 1024px) {
     .header {
@@ -299,6 +329,68 @@ body {
 
     .search input {
         width: 120px;
+    }
+
+    /*Estilos para tablet*/
+/*seccion1*/
+
+@media (width >= 768px) {
+    .quito {
+
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+    .informacion {
+        width: 320px; /* ancho fijo del bloque */
+    }
+    
+    .informacion p {
+        
+        border: 2px solid var(--colorUno);
+        background-color: var(--colorUno);
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 0;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    .informacion .btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 15px 40px;
+        border-radius: 20px;
+    }
+}
+}
+
+
+
+
+/*DESKTOP */
+@media (min-width: 1025px) {
+    /*SECCION 1*/
+    .quito h2{
+        font-size: 55px;
+    }
+    .quito__container{
+        padding-bottom: 60px;
+        
+    }
+    .informacion {
+        width: 700px;
+        font-size: 30px;
+    }
+
+    .informacion .btn {
+        padding: 20px 60px;
+        font-size: 1.2rem;
+    }
+    .informacion p{
+        padding: 80px 50px;
     }
 }
 
@@ -359,3 +451,4 @@ body {
         padding: 2rem;
     }
 }
+
