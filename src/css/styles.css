@@ -474,3 +474,144 @@ body {
     }
 }
 
+/* ===== FOOTER ===== */
+.footer {
+background-color: var(--colorUno);
+border-top: 4px solid #d2b48c;
+color: white;
+font-family: 'Lato', sans-serif;
+padding: 1.5rem 2rem;
+position: relative;
+}
+
+.footer__top {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.3rem;
+}
+
+.footer__info {
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+width: 100%;
+}
+
+.footer__item {
+color: var(--colorDos);
+font-weight: bold;
+font-size: 0.95rem;
+display: block;
+}
+
+.footer__item span {
+color: white;
+font-weight: normal;
+display: block;
+}
+@media (max-width: 767px) {
+.footer__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 1rem;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    width: 100%;
+}
+
+.footer__logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 4px;
+    background: rgba(255,255,255,0.05);
+}
+}
+
+.footer__bottom {
+border-top: 1px solid rgba(255,255,255,0.4);
+margin-top: 1rem;
+padding-top: 0.8rem;
+text-align: center;
+}
+
+.footer__bottom p {
+margin: 0;
+color: white;
+font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+.footer {
+    padding: 2rem 3rem;
+}
+
+.footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    flex-direction: row;
+    gap: 3rem;
+    width: auto;
+}
+
+.footer__item {
+    font-size: 0.95rem;
+}
+
+.footer__item span {
+    color: white;
+    font-weight: normal;
+    display: block;
+}
+
+.footer__logo {
+    position: static;
+}
+
+.footer__logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 4px;
+    background: rgba(255,255,255,0.05);
+}
+}
+@media (min-width: 1025px) {
+.footer {
+    padding: 2rem 5rem;
+}
+
+.footer__info {
+    gap: 5rem;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+
+.footer__item span {
+    color: white;
+    font-weight: normal;
+}
+
+.footer__logo img {
+    width: 90px;
+    height: 90px;
+}
+}
