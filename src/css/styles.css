@@ -306,14 +306,12 @@ body {
 /* Estilos para la seccion 1*/
 
 .quito{
-
-    padding: 1rem 2rem;
+    margin-top: -20px;
     background-color: var(--card);
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKkZ72Jl2AX4NYbNEZS1tuXNiOkjao_vC1ONlHf-G5wDPhzSgGVxYYPrDVixWQqcsiwkPhSmxo9XLPbjmrYmHw5w9RnGleZxIjHltKlpQ7kd5kZCPdah2iNZJGk-6qoBJKin18oHu06g/s2048/Ecu.jpeg");
 }
 .informacion {
     text-align: center;
-    
 }
 .informacion p {
     color: var(--colorTres);
@@ -369,6 +367,9 @@ body {
 /*DESKTOP */
 @media (min-width: 1025px) {
     /*SECCION 1*/
+    .quito {
+        margin-top: -50px;
+    }
     .quito h2{
         font-size: 55px;
     }
@@ -439,13 +440,12 @@ body {
 
 @media (width >= 768px) {
     .casoCriminal {
-        height: 582px;
-        width: 768px;
+        background-size: auto;
     }
 
     .casoCriminal img {
+        background-size: auto;
         height: 582px;
-        width: 768px;
     }
     
     .casoCriminal__container {
@@ -459,17 +459,18 @@ body {
 @media (min-width: 1025px) {
     .casoCriminal {
         height: 738px;
-        width: 1440px;
+        background-size: auto;
     }
 
     .casoCriminal img {
         height: 738px;
-        width: 1440px;
+        background-size: auto;
     }
     
     .casoCriminal__container {
-        margin-left: 800px;
+        margin-left: 950px;
         margin-top: -450px;
         margin-right: 40px;
     }
 }
+
