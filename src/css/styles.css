@@ -421,8 +421,9 @@ body {
 
 
 /*DESKTOP */
+/*SECCION 1*/
 @media (width >= 1024px) {
-    /*SECCION 1*/
+    
     .quito {
         
         padding: 10px;
@@ -455,227 +456,201 @@ body {
     }
 }
 
-/* Estilos para la seccion 2*/
-
-.casoCriminal,
-.casoCriminal__container {
-    display: flex;
-    flex-direction: column;
-}
+/* Estilos para la seccion 2*/ /*Mobile first*/
 
 .casoCriminal {
+    display: flex;
+    flex-direction: column;
     background-color: black;
-    position: relative;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .casoCriminal img {
-    height: 250px;
-    margin-bottom: -75px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .casoCriminal__container {
     background-color: white;
     border-radius: 20px;
-    padding: 1rem 2rem;
-    margin: 7px;
-    /* position: absolute;
-    z-index: 5px; */
-}
-
-.casoCriminal h2, p {
+    padding: 1.5rem;
     text-align: center;
-    padding: 0.5rem;
 }
 
 .casoCriminal__container h2 {
     color: red;
+    font-size: 1.5rem;
+}
+
+.casoCriminal__container p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .casoCriminal__container .btn {
-    color: var(--colorTres);
+    display: inline-block;
+    margin-top: 1rem;
     background: #D84447;
+    color: white;
 }
-
-.casoCriminal .casoCriminal__container .btn:hover {
-    background-color: darkred;
-}
-
 /*Estilos para tablet seccion 2*/
 
-@media (width >= 768px) {
+@media (width >= 768px) and (width < 1024px) {
     .casoCriminal {
-        background-size: auto;
+        padding: 2rem;
+        background-color: #CCB392;
     }
 
-    .casoCriminal img {
-        background-size: auto;
-        height: 582px;
-    }
-    
     .casoCriminal__container {
-        margin-left: 450px;
-        margin-top: -450px;
-        margin-right: 40px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
 /*DESKTOP seccion 2 */
-@media (min-width: 1025px) {
+@media (width >= 1024px) {
     .casoCriminal {
-        height: 738px;
-        background-size: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem;
+        background-color: #CCB392;
     }
 
     .casoCriminal img {
-        height: 738px;
-        background-size: auto;
+        width: 60%;
+        height: auto;
     }
-    
+
     .casoCriminal__container {
-        margin-left: 950px;
-        margin-top: -450px;
-        margin-right: 40px;
+        width: 35%;
+        margin: 0;
+        text-align: center;
     }
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER  ===== */
 .footer {
-background-color: var(--colorUno);
-border-top: 4px solid #d2b48c;
-color: white;
-font-family: 'Lato', sans-serif;
-padding: 1.5rem 2rem;
-position: relative;
+    background-color: var(--colorUno);
+    border-top: 4px solid #d2b48c;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
 }
 
 .footer__top {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 0.3rem;
-}
-
-.footer__info {
-display: flex;
-flex-direction: column;
-gap: 0.3rem;
-width: 100%;
-}
-
-.footer__item {
-color: var(--colorDos);
-font-weight: bold;
-font-size: 0.95rem;
-display: block;
-}
-
-.footer__item span {
-color: white;
-font-weight: normal;
-display: block;
-}
-@media (max-width: 767px) {
-.footer__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem 1rem;
-}
-
-.footer__logo {
     display: flex;
-    justify-content: center;
-    margin-top: 1.2rem;
+    flex-direction: column;
+    align-items: center; /* En móvil centrado */
+    gap: 1.5rem;
+}
+
+/* Contenedor de los textos (Inicio, Contáctanos, etc.) */
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
 }
 
-.footer__logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgba(255,255,255,0.2);
-    padding: 4px;
-    background: rgba(255,255,255,0.05);
-}
-}
-
-.footer__bottom {
-border-top: 1px solid rgba(255,255,255,0.4);
-margin-top: 1rem;
-padding-top: 0.8rem;
-text-align: center;
-}
-
-.footer__bottom p {
-margin: 0;
-color: white;
-font-size: 0.9rem;
-}
-
-@media (min-width: 768px) {
-.footer {
-    padding: 2rem 3rem;
-}
-
-.footer__top {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer__info {
-    flex-direction: row;
-    gap: 3rem;
-    width: auto;
-}
-
+/* Estilo para que "Inicio", "Contáctanos" sean amarillos */
 .footer__item {
+    color: var(--colorDos) !important;
+    font-weight: bold;
     font-size: 0.95rem;
+    text-decoration: none;
 }
 
 .footer__item span {
     color: white;
     font-weight: normal;
     display: block;
+    margin-top: 2px;
 }
 
+/* Contenedor del Logo */
 .footer__logo {
-    position: static;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__logo img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid rgba(255,255,255,0.2);
     padding: 4px;
     background: rgba(255,255,255,0.05);
 }
-}
-@media (min-width: 1025px) {
-.footer {
-    padding: 2rem 5rem;
-}
 
-.footer__info {
-    gap: 5rem;
-}
-
-.footer__item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-
+/* Línea de abajo */
+.footer__bottom {
+    border-top: 1px solid rgba(255,255,255,0.4);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;
 }
 
-.footer__item span {
+.footer__bottom p {
+    margin: 0;
     color: white;
-    font-weight: normal;
+    font-size: 0.9rem;
 }
 
-.footer__logo img {
-    width: 90px;
-    height: 90px;
+/* ===== AJUSTES TABLET Y DESKTOP ===== */
+@media (min-width: 768px) {
+    .footer {
+        padding: 2rem 3rem;
+    }
+
+    .footer__top {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__info {
+        flex-direction: row; 
+        gap: 3.5rem; 
+        width: auto;
+        text-align: left;
+    }
+
+    .footer__logo {
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    .footer__logo img {
+        width: 75px;
+        height: 75px;
+    }
 }
+
+@media (min-width: 1025px) {
+    .footer {
+        padding: 2rem 5rem;
+    }
+
+    .footer__info {
+        gap: 5.5rem;
+    }
+
+    .footer__logo img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+    }
 }
