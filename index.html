@@ -15,98 +15,33 @@
     <!-- Etiqueta para el título de la página web  -->
     <title>SafeExplorEC</title>
     
-    <!-- Etiqueta para cargar fuentes (Optimizado - no bloquea renderizado) -->
+    <!-- Etiqueta para cargar fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Fuentes principales (Lato y Roboto) - cargan normalmente -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Fuente Abel (no crítica) - no bloquea renderizado -->
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    </noscript>
-
-    <!-- Preconectar a orígenes de imágenes para mejorar LCP -->
-    <link rel="preconnect" href="https://imagenes.primicias.ec">
-    <link rel="preconnect" href="https://blogger.googleusercontent.com">
-    <link rel="preconnect" href="https://maps.googleapis.com">
-
-    <!-- CSS Normalize (optimizado - no bloquea renderizado) -->
-    <link rel="preload" href="./src/css/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./src/css/normalize.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-- Etiqueta para cargar hoja de estilos CSS -->
-    <link rel="preload" href="./src/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./src/css/styles.css"></noscript>
+    <link rel="stylesheet" href="./src/css/normalize.css">
     
-    <!-- Iconos (optimizado - no bloquea renderizado) -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
-  
+    <!-- Etiqueta para restablecer estilos de los navegadores -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <!-- Etiqueta para cargar un favicon-->
+
     <link rel="apple-touch-icon" sizes="180x180" href="src/images/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/images/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/images/icon/favicon-16x16.png">
     <link rel="manifest" href="src/images/icon/site.webmanifest">
 
-    <style>
-        /* CSS crítico para primera impresión */
-        :root {
-            --colorUno: #701B23;
-            --colorDos: #FFAE00;
-            --colorTres: #FFFFFF;
-            --accent: #ffb500;
-            --accent-dark: #ff9e00;
-            --card: rgba(146, 137, 126, 0.92);
-            --text-muted: #ddd;
-        }
-        
-        body {
-            margin: 0;
-            font-family: "Abel", sans-serif;
-            overflow-x: hidden;
-            background-color: #f5f5f5;
-        }
-        
-        .header {
-            background-color: var(--colorUno);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-        }
-        
-        .hero {
-            position: relative;
-            min-height: calc(100vh - 78px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 4rem 2rem;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .hero__content {
-            max-width: 900px;
-            padding: 3rem 2.5rem;
-            background: var(--card);
-            border-radius: 48px;
-            text-align: center;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: linear-gradient(135deg, #d48f00, #b87a00);
-            color: #ffffff;
-            border-radius: 999px;
-            text-decoration: none;
-            font-weight: 700;
-        }
-    </style>
+    <!-- Fuente Abel-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
 </head>
 
 <!-- Etiqueta para información a los usuarios -->
@@ -115,7 +50,7 @@
 
         <!-- Logo -->
         <div class="logo">
-            <img src="src/images/logo.png" alt="logo" width="60" height="60" loading="eager">
+            <img src="src/images/logo.png" alt="logo">
             <h1>SafeExplor<span>EC</span></h1>
         </div>
 
@@ -130,8 +65,7 @@
         <!-- Buscador -->
         <div class="search">
             <i class="fas fa-search"></i>
-            <label for="buscador" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">Buscar:</label>
-            <input type="text" id="buscador" placeholder="Buscar...">
+            <input type="text">
         </div>
 
     </header>
@@ -164,7 +98,7 @@
 
         <!-- Sección Ciudades -->
         <section class="casoCriminal">
-            <img src="src/images/caso_criminal.jpeg", alt="caso criminal" loading="lazy" width="600" height="400">
+            <img src="src/images/caso_criminal.jpeg", alt="caso criminal">
 
             <div class="casoCriminal__container">
                 <h2>Intento de sicariato en el norte de quito</h2>
@@ -190,7 +124,7 @@
                     <label for="parroquia">Parroquia:</label>
                     <input type="text" id="parroquia" name="parroquia">
 
-                    <label for="barrio-sector">Barrio/sector:</label>
+                    <label for="parroquia">Barrio/sector:</label>
                     <input type="text" id="barrio-sector" name="barrio-sector">
 
                     <button type="submit" class="btn">Buscar</button>
@@ -198,7 +132,7 @@
 
                 <!-- Aquí puedes integrar un mapa real con iframe de Google Maps o Leaflet -->
                 <div class="mapa__view">
-                    <iframe title="Mapa de ubicación - Aeropuerto Internacional Mariscal Sucre" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36664.7002689804!2d-78.37615861879571!3d-0.12182058381663866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58db4352baa87%3A0x2f9f7623e0894b8b!2sAeropuerto%20Internacional%20Mariscal%20Sucre!5e0!3m2!1ses!2sec!4v1777845379531!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36664.7002689804!2d-78.37615861879571!3d-0.12182058381663866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58db4352baa87%3A0x2f9f7623e0894b8b!2sAeropuerto%20Internacional%20Mariscal%20Sucre!5e0!3m2!1ses!2sec!4v1777845379531!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -253,7 +187,7 @@
     </span>
     </div>
     <div class="footer__logo">
-    <img src="src/images/logo.png" alt="Logo SafeExplore" loading="lazy" width="65" height="65">
+    <img src="src/images/logo.png" alt="Logo SafeExplore">
     </div>
 </div>
 <div class="footer__bottom">
