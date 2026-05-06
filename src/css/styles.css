@@ -169,7 +169,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4rem 2rem;
-    background-image: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)), url('/src/images/hero.jpeg');
+    background-image: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)), url('https://imagenes.primicias.ec/files/main_image_832_468/uploads/2024/05/26/665353a787575.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -321,7 +321,7 @@ body {
     padding: 7px;
     margin-top: -20px;
     background-color: var(--card);
-    background-image: url('/src/images/seccion1.jpeg');
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKkZ72Jl2AX4NYbNEZS1tuXNiOkjao_vC1ONlHf-G5wDPhzSgGVxYYPrDVixWQqcsiwkPhSmxo9XLPbjmrYmHw5w9RnGleZxIjHltKlpQ7kd5kZCPdah2iNZJGk-6qoBJKin18oHu06g/s2048/Ecu.jpeg');
 }
 .informacion {
     text-align: center;
